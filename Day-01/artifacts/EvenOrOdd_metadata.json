@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Check",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_Num",
+						"type": "uint256"
+					}
+				],
+				"name": "setNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day-01/code4.sol": "EvenOrOdd"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day-01/code4.sol": {
+			"keccak256": "0xe425315e1bf9a99631b79784ed0949cb624b323c05bcc3cdc780a00ca9bc7d1a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ded3b864ce8bd5d97be6fb08edd406e709029ee013213c3020edf80572a60c7d",
+				"dweb:/ipfs/QmcFTkfqP1JXi7d1RZKtRTNkTGxLgpb2mzN9sqy11Fzxo1"
+			]
+		}
+	},
+	"version": 1
+}
