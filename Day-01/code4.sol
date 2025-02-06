@@ -12,7 +12,7 @@ contract EvenOrOdd{
         if(num%2==0){
             return "Even Number";
         }
-        else{
+        else{ 
             return "Odd Number";
         }
     }
