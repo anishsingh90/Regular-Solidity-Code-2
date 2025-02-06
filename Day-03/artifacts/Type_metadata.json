@@ -7,20 +7,22 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "Sum",
+				"name": "get_Choice",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "enum Type.week_days",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "set_Value",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -37,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day-02/code2.sol": "SolidityTest"
+			"Day-03/code1.sol": "Type"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -51,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day-02/code2.sol": {
-			"keccak256": "0x0b8ce07907ad1bcb49086d5744534f2494741bd10cc3812e2a19066c850bec28",
+		"Day-03/code1.sol": {
+			"keccak256": "0x8f0e2b23c4736e23cbc041fd7b6f41b39e51b36f1ef873620758046d07aaafd4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b0dcd509a97ce4c738da1e8ee0df84cf3ef369077f41af2f054800f1568102fb",
-				"dweb:/ipfs/QmacQeHpUrMCSbVMdm41zmN8tDMuJyga2QY7RX7iT66JYA"
+				"bzz-raw://cc47e66f13da4e53dc3665135d8647bf11a5293d9ac6e330f258f722973c386b",
+				"dweb:/ipfs/QmS4s12G1CU71AzjMhHjm73aBcVG4vuGofneMhdQUFDYMQ"
 			]
 		}
 	},
