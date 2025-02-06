@@ -20,6 +20,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getdefaultvalue",
+				"outputs": [
+					{
+						"internalType": "enum Type.week_days",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "set_Value",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -54,11 +67,11 @@
 	},
 	"sources": {
 		"Day-03/code1.sol": {
-			"keccak256": "0x8f0e2b23c4736e23cbc041fd7b6f41b39e51b36f1ef873620758046d07aaafd4",
+			"keccak256": "0xb7caf4271bc8bc962f28a398af0e96dc6d97c137b9a4d1b92a29d8b903c2d964",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cc47e66f13da4e53dc3665135d8647bf11a5293d9ac6e330f258f722973c386b",
-				"dweb:/ipfs/QmS4s12G1CU71AzjMhHjm73aBcVG4vuGofneMhdQUFDYMQ"
+				"bzz-raw://17ba993401fbff2a0a6f2229c8f670077f714a160f96d0dcb8ce79c9ec3f3398",
+				"dweb:/ipfs/QmTQT9hqjKkY3NDFbFmvk6aC7Apsjv5xDU41JxiBZHqCyE"
 			]
 		}
 	},

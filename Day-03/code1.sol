@@ -25,4 +25,8 @@ contract Type{
     function get_Choice() public view returns(week_days){
         return choice;
     }
+
+    function getdefaultvalue() public pure returns(week_days){
+        return default_value;
+    }
 }
