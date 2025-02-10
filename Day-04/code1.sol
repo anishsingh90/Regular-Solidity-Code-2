@@ -1,25 +1,77 @@
-// SPDX-License-Identifier: MIT
-pragma solidity >=0.5.0 <0.9.0;
+// SPDX-License-Identifier: Unlicensed
 
-contract Transfer{
-    event TransferEvent(address from, address to, uint amount);
-    event ChangeNameEvent(string name);
+pragma solidity >0.7.0 <=0.9.0;
 
-    string public name = "CTE";
-    uint public id = 1;
+contract CampaignFactory {
+    address[] public deployedCampaigns;
 
+    event campaignCreated(
+        string title,
+        uint requiredAmount,
+        address indexed owner,
+        address campaignAddress,
+        string imgURI,
+        uint indexed timestamp,
+        string indexed category
+    );
 
-    function transfer(address payable to) public payable {
-        to.transfer(msg.value);
-        emit TransferEvent(msg.sender, to, msg.value);
-    }
+    function createCampaign(
+        string memory campaignTitle, 
+        uint requiredCampaignAmount, 
+        string memory imgURI, 
+        string memory category,
+        string memory storyURI) public
+    {
 
-    function changeName(string calldata _name) public {
-        name = _name;
-        emit ChangeNameEvent(_name);
-    }
+        Campaign newCampaign = new Campaign(
+            campaignTitle, requiredCampaignAmount, imgURI, storyURI, msg.sender);
+        
 
-    function changeId(string calldata _name) public {
-        name = _name;
+        deployedCampaigns.push(address(newCampaign));
+
+        emit campaignCreated(
+            campaignTitle, 
+            requiredCampaignAmount, 
+            msg.sender, 
+            address(newCampaign),
+            imgURI,
+            block.timestamp,
+            category
+        );
+
     }
 }
+
+
+contract Campaign {
+    string public title;
+    uint public requiredAmount;
+    string public image;
+    string public story;
+    address payable public owner;
+    uint public receivedAmount;
+
+    event donated(address indexed donar, uint indexed amount, uint indexed timestamp);
+
+    constructor(
+        string memory campaignTitle, 
+        uint requiredCampaignAmount, 
+        string memory imgURI,
+        string memory storyURI,
+        address campaignOwner
+    ) {
+        title = campaignTitle;
+        requiredAmount = requiredCampaignAmount;
+        image = imgURI;
+        story = storyURI;
+        owner = payable(campaignOwner);
+    }
+
+    function donate() public payable {
+        require(requiredAmount > receivedAmount, "required amount fullfilled");
+        owner.transfer(msg.value);
+        receivedAmount += msg.value;
+        emit donated(msg.sender, msg.value, block.timestamp);
+    }
+}
+
