@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "s",
+						"type": "string"
+					}
+				],
+				"name": "getLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day-05/code3.sol": "LearningString"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day-05/code3.sol": {
+			"keccak256": "0xff7f4c498a24606556c1b5f2a3478226db6b6b37fb463d71a061459ba7c7668a",
+			"urls": [
+				"bzz-raw://1eb2ea99e859de9305ab9d4f72ebf0d617e53d8d9e971498c19e599f287e5474",
+				"dweb:/ipfs/QmXbcK1LF91XpStd2ETJ3fZder11wnGU2aNrYQkwpZdYko"
+			]
+		}
+	},
+	"version": 1
+}
