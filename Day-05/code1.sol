@@ -7,7 +7,6 @@ contract Solidity{
     function setText() public returns(string memory){
         text = "Anish Singh";
     }
-
     function getText() public view returns(string memory){
         return text;
     }
