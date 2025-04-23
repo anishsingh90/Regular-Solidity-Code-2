@@ -262,11 +262,11 @@
 	},
 	"sources": {
 		"TaskManagement/TaskManager.sol": {
-			"keccak256": "0x57228557e778ff98273990ba42bdddb476054026d6d688aceeea35d81cfd1767",
+			"keccak256": "0x4c8fd2acbc289dd338ba78a189e153c61ce5c20e634aef238c12b8553d5ea302",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a8c3fb7b8fe7d4c455808733858330e5692f9f746374929c15a4f1c9b4124971",
-				"dweb:/ipfs/QmX4ENXjGcNWyjsx67UxoRFfZ1KwAUjhzHF8CtSYmF9MFn"
+				"bzz-raw://a65b37e289b284a909303fe1c0592fa5174cb816c62b4ffddf55e12f9e332400",
+				"dweb:/ipfs/QmRV6UUJMZpf6cXTPuGkSzR5a3zSno95dwWf57Q2DgHDpw"
 			]
 		}
 	},
