@@ -12,4 +12,4 @@ contract AuctionSystem{
 
     event AuctionStarted(uint endTime);
 
-}
+} 
