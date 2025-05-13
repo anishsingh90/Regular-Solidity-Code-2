@@ -14,7 +14,7 @@ contract Type{
     }
 
     week_days week;
-    week_days choice;
+    week_days choice; 
 
     week_days constant default_value = week_days.Sunday;
 
