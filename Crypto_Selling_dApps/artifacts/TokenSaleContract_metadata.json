@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Crypto_Selling_dApps/TokenSaleContract.sol": "TokenSaleContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Crypto_Selling_dApps/TokenSaleContract.sol": {
+			"keccak256": "0xd343119586b5143565cfa8af55d09e8690d1d25e83756988aa6b4dd0863518c3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b63ee3232b5fbd9c2105d08f75845b19ea134e1a77b0c4ac374cb920294e2d04",
+				"dweb:/ipfs/QmXrJo6wJV7NbtjamJfR1uqeTHy6GiaRnscfbu7DF2UZ9j"
+			]
+		}
+	},
+	"version": 1
+}

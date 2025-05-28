@@ -1,0 +1,148 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract TheBlockchainCoders",
+						"name": "_tokenContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Sell",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numberOfTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "buyToken",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "endSale",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenContract",
+				"outputs": [
+					{
+						"internalType": "contract TheBlockchainCoders",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenSold",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Crypto_Selling_dApps/TokenSaleContract.sol": "TokenSale"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Crypto_Selling_dApps/TheBlockchainCoders.sol": {
+			"keccak256": "0x82db36837fe529b23f956d02c293cd6b8d06c3ed7ea803df137e218be2917506",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc639a675a072002a9d2b98c32b5d092d6219c2ec966e03f69070e65d46b64c0",
+				"dweb:/ipfs/QmcnZmiqr5fs5EehMQsmLKgBztTXizMNoPiBBqtsXpyqud"
+			]
+		},
+		"Crypto_Selling_dApps/TokenSaleContract.sol": {
+			"keccak256": "0xcbaf56a5b0328d8eb33badab31837ab28f7984f6e26b77c207b28be19071e891",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://320bd401e4ebbfc6c5c4c12ce162afed49e170a0f8751f86b85c07541e78678a",
+				"dweb:/ipfs/QmW2im6LMbEnuUtUvty4njyTKonxBJPcVLbyBdbBqBjjCH"
+			]
+		}
+	},
+	"version": 1
+}
