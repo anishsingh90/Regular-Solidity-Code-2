@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract AuctionSystem{
     address payable public auctioneer;
-    uint public auctionEndTime;
+    uint public auctionEndTime; 
     uint public highestBid;
     uint public highestBidder;
     bool public auctionEnded;
@@ -12,4 +12,4 @@ contract AuctionSystem{
 
     event AuctionStarted(uint endTime);
 
-}
+} 

@@ -4,7 +4,7 @@ pragma solidity >=0.5.0 <0.9.0;
 contract Solidity{
     uint a;
 
-    function set(uint x) public {
+    function set(uint x) public { 
         a = x;
     }
 

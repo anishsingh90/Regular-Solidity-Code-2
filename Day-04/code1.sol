@@ -13,7 +13,7 @@ contract CampaignFactory {
         string imgURI,
         uint indexed timestamp,
         string indexed category
-    );
+    ); 
 
     function createCampaign(
         string memory campaignTitle, 

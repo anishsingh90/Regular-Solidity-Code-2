@@ -6,7 +6,7 @@ contract SolidityLearn{
 
     function setText() public returns(string memory){
         text = "Anish";
-    }
+    } 
  
     function getText() public view returns(string memory){
         return text;
