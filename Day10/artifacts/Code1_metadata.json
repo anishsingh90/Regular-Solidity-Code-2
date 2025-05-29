@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "loop",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day10/code1.sol": "Code1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day10/code1.sol": {
+			"keccak256": "0x3b24ee2a34e2e296c853815e36c7024939b4e6e7274e9101ce0a7035fa04f903",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://93d4cb7b1327e5cd1a3e3b0bf647ae2d18eca433f5e84f8b88bca8fc640fc562",
+				"dweb:/ipfs/QmaM5xWGNiaVQjuxf8Y7zPavCB4K2QShv3p7NbjsENx9LK"
+			]
+		}
+	},
+	"version": 1
+}
