@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_empid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_empname",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_empage",
+						"type": "uint256"
+					}
+				],
+				"name": "enterDetails",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day10/code1.sol": "ModifierWithoutArg"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day10/code1.sol": {
+			"keccak256": "0x6d0384a817977295741d70ac74b7279440c75ab5f6ff2e550a9c020a5f21bb57",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a4be6a7d38ef99eb26794135ce38e7637b576dfe4e11e5e84ef2544e0872d6e",
+				"dweb:/ipfs/QmTDuPhrbqADJUKcVbeSnTfSbwkRkB44BirxojzV87DUbT"
+			]
+		}
+	},
+	"version": 1
+}
