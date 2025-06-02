@@ -7,7 +7,7 @@ contract ModifierWithoutArg{
         uint emp_id;
         string emp_name;
         uint age;
-    }
+    } 
 
     constructor() public {
         admin = msg.sender;
