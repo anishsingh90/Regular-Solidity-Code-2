@@ -1,0 +1,55 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "Calculate",
+				"outputs": [
+					{
+						"name": "product",
+						"type": "uint256"
+					},
+					{
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day-11/code1.sol": "Test"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day-11/code1.sol": {
+			"keccak256": "0x1a4d22fbb1a436802a4208c5bb4e121c04991a45a088b7b2d42ad16943edf581",
+			"urls": [
+				"bzzr://4528461bcc4411eed85bcaa6439320eb48d44e9ea8ea45f25c97be238d494205"
+			]
+		}
+	},
+	"version": 1
+}

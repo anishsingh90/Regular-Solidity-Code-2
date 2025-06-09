@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "Loop",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day-11/code1.sol": "Types"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day-11/code1.sol": {
+			"keccak256": "0x46e1b75559465b4e63c79b5a57eb892b42727153c18faf921b23098272f4ffd6",
+			"urls": [
+				"bzzr://9ef3e12766bfaf70a9170d81b01368a8e8cfcc4e5d007ff00458afa43c982960"
+			]
+		}
+	},
+	"version": 1
+}
