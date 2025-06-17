@@ -7,56 +7,23 @@
 		"abi": [
 			{
 				"constant": true,
-				"inputs": [],
-				"name": "getText",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [],
-				"name": "setText",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": false,
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "message",
+						"name": "s",
 						"type": "string"
 					}
 				],
-				"name": "setTextByPassing",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [],
-				"name": "text",
+				"name": "getLength",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -81,10 +48,10 @@
 	},
 	"sources": {
 		"Day-12/code1.sol": {
-			"keccak256": "0x04f5ce79d0f5a49dba843a457ea34970848c6d62978d8fd48f2e3175a3e98374",
+			"keccak256": "0xb95c7e4c4cbfae1da8547c4ca8bf3dde1202fc046cc78dbe454f68183452cc8d",
 			"urls": [
-				"bzz-raw://382553ac1e954d349c4db1917131122b2833946e4c0f67d4d4847ddead299975",
-				"dweb:/ipfs/QmU8HrzXPTHxrRfXxDvZFnJvpFJAg1f4vNg3bEKR2wfjDY"
+				"bzz-raw://8b92f711bdffd27ab8dd54a12e30e00c947aa5c540376ed5079035650fa37c89",
+				"dweb:/ipfs/Qmd69RVMspbxqqQrc1M74KpWpD8hCiE1oJpUspHGYGRNZV"
 			]
 		}
 	},
