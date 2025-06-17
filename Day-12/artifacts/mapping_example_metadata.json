@@ -1,0 +1,56 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "student_result",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day-12/code4.sol": "mapping_example"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day-12/code4.sol": {
+			"keccak256": "0x6294e7aa4ef918e5d0d4845eaeef00b240bf5f6967fca12794a117c58c785fd1",
+			"urls": [
+				"bzzr://d4d8b4b0f8efc5743671e0a998095a3593314cefce8a02d4c4a6772e6c52baad"
+			]
+		}
+	},
+	"version": 1
+}
