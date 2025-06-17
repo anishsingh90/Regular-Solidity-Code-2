@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "testInheritance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day-12/code1.sol": "caller"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day-12/code1.sol": {
+			"keccak256": "0x168bb691f17e5b1cfb9102b887233d2cde71ce58cc7ef6c3abe9efb40c75efcd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://91a1e7362e30b5843b285c2ab8ee52023acc24786bb5c7cbfce6016846ca3df9",
+				"dweb:/ipfs/QmVbQVBAJkzXp1amgcy6dE4xsNR56ztY2feBou2r7PBdKs"
+			]
+		}
+	},
+	"version": 1
+}
