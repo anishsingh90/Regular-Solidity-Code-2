@@ -1,18 +1,16 @@
 {
 	"compiler": {
-		"version": "0.5.17+commit.d19bba13"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"constant": true,
 				"inputs": [],
 				"name": "getValue",
 				"outputs": [
@@ -22,24 +20,30 @@
 						"type": "string"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
 			"Day-13/code1.sol": "ConstructorCall"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "prague",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -48,10 +52,11 @@
 	},
 	"sources": {
 		"Day-13/code1.sol": {
-			"keccak256": "0x4f754af32b994fa53d99e16374188f0ea79f8cdbbb6e8d288d6dc2ec096bd85d",
+			"keccak256": "0x616ac205deb34fa180f07ab3170823adce775f3fe1d5a8acfb3d132ee440c8b7",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://c7bef9d8dd99cb8a75ef6e87bcefdf472279b5bf1c2665efb4a230761dc4f461",
-				"dweb:/ipfs/QmYBLtL5JzXqvaay33Gt1WGz62geu4Z7986RZgw9EDVKWL"
+				"bzz-raw://1f06a25508c14bd8e42074e0a16d765bd4b540d3615220f42972a5603ccb6ee3",
+				"dweb:/ipfs/Qmc27RK6RroryMt4auYSQS7ZELejcRrnkP5q9YRW4crXVf"
 			]
 		}
 	},

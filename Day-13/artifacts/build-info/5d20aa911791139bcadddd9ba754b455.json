@@ -1,0 +1,70 @@
+{
+	"id": "5d20aa911791139bcadddd9ba754b455",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.5.17",
+	"solcLongVersion": "0.5.17+commit.d19bba13",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Day-13/code2.sol": {
+				"content": ""
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "Day-13/code2.sol:1:1: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.5.17;\"\n\n^\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.5.17;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 0,
+					"file": "Day-13/code2.sol",
+					"start": 0
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"Day-13/code2.sol": {
+				"ast": {
+					"absolutePath": "Day-13/code2.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "0:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

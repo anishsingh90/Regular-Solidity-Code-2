@@ -4,27 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "n",
-						"type": "uint256"
-					}
-				],
-				"name": "factorial",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -53,11 +33,11 @@
 	},
 	"sources": {
 		"Day-02/code1.sol": {
-			"keccak256": "0x67a0cd8192ed4285c95c4742f1b2139860fae6a220b933d0a6ce979a32fe72e0",
+			"keccak256": "0xf235e0865c2a1f5c50b7704cf978b5582fbeeb3127d307f564bf9e791a1a4e57",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4fca590f62a82b692f0a1d00cba3031113c83def7393f1e51488a312a5eaaac8",
-				"dweb:/ipfs/QmUHxAqsF5K4BVTmSL2Ntr3CQNnK1fJUrHBtX4Kjv4MuSY"
+				"bzz-raw://cd51cd5f06b7c028d2446e87920aff27d538a6ec039770497a0306de0837ad07",
+				"dweb:/ipfs/QmZ1WDsU19PVWnxKZqwJmhBKPehQEsnsGBuK6L6mCSN7DC"
 			]
 		}
 	},
