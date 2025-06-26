@@ -30,19 +30,6 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "func3",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -58,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day-14/code1.sol": "A"
+			"Day-14/code2.sol": "A"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day-14/code1.sol": {
-			"keccak256": "0xc3e03c74b1068e88730353cdc6ff3b2a449967b93aa5d075023067406cff9433",
+		"Day-14/code2.sol": {
+			"keccak256": "0xe2a761386514d6f444460d550199396c7cdc11a2346c2eaa688aba8eec570dcb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6bf33a17f3212573f627632a30b7b572bacbaa5bba22ee31cd3005a3fb9fd0ba",
-				"dweb:/ipfs/QmPvzYm9EiPibhc1XuE7JE9xFxMcr3ZJHa4vGWRyy9HGhq"
+				"bzz-raw://18a6af94db559385ecce5b185f7825d223885c485c78c235e74cda6b817bd9d5",
+				"dweb:/ipfs/QmSTp2QiyuDiTLuqCwNEKxS8u5NyTJZFHwSEjTdrkfhjMo"
 			]
 		}
 	},
