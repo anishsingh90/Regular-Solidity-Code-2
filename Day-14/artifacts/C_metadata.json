@@ -7,25 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "get_Choice",
+				"name": "func1",
 				"outputs": [
 					{
-						"internalType": "enum Type.week_days",
+						"internalType": "string",
 						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getdefaultvalue",
-				"outputs": [
-					{
-						"internalType": "enum Type.week_days",
-						"name": "",
-						"type": "uint8"
+						"type": "string"
 					}
 				],
 				"stateMutability": "pure",
@@ -33,9 +20,28 @@
 			},
 			{
 				"inputs": [],
-				"name": "set_Value",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "func2",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "func3",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -52,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day-03/code1.sol": "Type"
+			"Day-14/code1.sol": "C"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -66,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day-03/code1.sol": {
-			"keccak256": "0xb7caf4271bc8bc962f28a398af0e96dc6d97c137b9a4d1b92a29d8b903c2d964",
+		"Day-14/code1.sol": {
+			"keccak256": "0xc3e03c74b1068e88730353cdc6ff3b2a449967b93aa5d075023067406cff9433",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://17ba993401fbff2a0a6f2229c8f670077f714a160f96d0dcb8ce79c9ec3f3398",
-				"dweb:/ipfs/QmTQT9hqjKkY3NDFbFmvk6aC7Apsjv5xDU41JxiBZHqCyE"
+				"bzz-raw://6bf33a17f3212573f627632a30b7b572bacbaa5bba22ee31cd3005a3fb9fd0ba",
+				"dweb:/ipfs/QmPvzYm9EiPibhc1XuE7JE9xFxMcr3ZJHa4vGWRyy9HGhq"
 			]
 		}
 	},
