@@ -10,9 +10,9 @@
 				"name": "get",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -21,9 +21,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "value",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
 					}
 				],
 				"name": "set",
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day-18/code1.sol": "SimpleStorage"
+			"Day-18/code2.sol": "SimpleStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -59,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day-18/code1.sol": {
-			"keccak256": "0x3ed3a912fc0c9f33bcc0c63a356461eec2928276476fdd81e3bc17d55ee33eda",
+		"Day-18/code2.sol": {
+			"keccak256": "0x6a537d40df031fbbb2940d12b9b9035f4ec07c227ad1379ce7f8fb6fb8086d80",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2757c10dc95016afac9cc8daf06150a10d8ae06e62a0c05aff46c0265ac8a98e",
-				"dweb:/ipfs/QmcH14ScLcD9WAUK6BKQ3dBvM5ocFmRj1VC4bRdDAtHDXM"
+				"bzz-raw://3362d7d18d6c7da19148d18e6eaa4a803918bcf61f9e4778b9dd394c219def23",
+				"dweb:/ipfs/QmfXPfRHBpEmQ43zhwrByqVGxsfBDxXto9cRvhPfycbHxL"
 			]
 		}
 	},
