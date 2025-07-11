@@ -40,12 +40,12 @@
 						"type": "uint256"
 					}
 				],
-				"name": "withdrawalMade",
+				"name": "withdrawal",
 				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "deposit",
+				"name": "deposite",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -103,7 +103,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day-20/code1.sol": "etherTransfer"
+			"Day-20/code2.sol": "EtherWallet"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -117,12 +117,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day-20/code1.sol": {
-			"keccak256": "0xe2205090fd66d535086c8fa9ba79ddd37b9c27c92fb6019ae0c8afd1b0cee077",
+		"Day-20/code2.sol": {
+			"keccak256": "0xbcd00b9550d21b021947338485a4a20f7205af24c7103bbc078382b8cc49589b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3918c81b3e109c84a705463bc63699e058284847e647c90ebd07261cbd66799b",
-				"dweb:/ipfs/QmaJJqcsCbLtfppsLrAD2ouGJWCnvGQ6ziBAUAXoTvqphN"
+				"bzz-raw://3c316f5dbd8cd79fee79441323cfb3b0abbdfa696b33b9f7defd6af69a0f0cc0",
+				"dweb:/ipfs/QmfUqppy1DAP4jSgfH7kAmqxJ6xwcGnauQSCvoaaUxHfEs"
 			]
 		}
 	},
