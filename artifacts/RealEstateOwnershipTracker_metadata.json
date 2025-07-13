@@ -1,0 +1,421 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "propertyId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "transferDate",
+						"type": "uint256"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "propertyId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "physicalAddress",
+						"type": "string"
+					}
+				],
+				"name": "PropertyRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyId",
+						"type": "uint256"
+					}
+				],
+				"name": "getOwnershipHistory",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "propertyId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "previousOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "newOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "transferDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "transferReason",
+								"type": "string"
+							}
+						],
+						"internalType": "struct RealEstateOwnershipTracker.OwnershipTransfer[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPropertyDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nextPropertyId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ownershipHistory",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "propertyId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "transferDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "transferReason",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "properties",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "physicalAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "legalDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "area",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "purchasePrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "purchaseDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "currentOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "exists",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_physicalAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_legalDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_area",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_purchasePrice",
+						"type": "uint256"
+					}
+				],
+				"name": "registerProperty",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_transferReason",
+						"type": "string"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "verifyOwnership",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getOwnershipHistory(uint256)": {
+					"details": "Get ownership history of a property",
+					"params": {
+						"_propertyId": "ID of the property"
+					}
+				},
+				"getPropertyDetails(uint256)": {
+					"details": "Get property details",
+					"params": {
+						"_propertyId": "ID of the property"
+					}
+				},
+				"registerProperty(string,string,uint256,uint256)": {
+					"details": "Register a new property",
+					"params": {
+						"_area": "Area in square meters",
+						"_legalDescription": "Legal description of the property",
+						"_physicalAddress": "The physical address of the property",
+						"_purchasePrice": "Purchase price in wei"
+					}
+				},
+				"transferOwnership(uint256,address,string)": {
+					"details": "Transfer ownership of a property",
+					"params": {
+						"_newOwner": "Address of the new owner",
+						"_propertyId": "ID of the property",
+						"_transferReason": "Reason for the transfer (sale, gift, inheritance, etc.)"
+					}
+				},
+				"verifyOwnership(uint256,address)": {
+					"details": "Verify ownership of a property",
+					"params": {
+						"_owner": "Address to verify",
+						"_propertyId": "ID of the property"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day-21/code2.sol": "RealEstateOwnershipTracker"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day-21/code2.sol": {
+			"keccak256": "0x01d14b887c0404d6fe2607a25650e5d5bfd64f4d3b52379a210de90e24a93954",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da1a6aa1ce256c23d36cf0994e6b1631836a66999edd984e14edc4b3bbb4c0c1",
+				"dweb:/ipfs/QmTn1qqowWwCM1f5Qgo9ckLQRHy6wuvQtLkkEknZ5vCWbi"
+			]
+		}
+	},
+	"version": 1
+}
