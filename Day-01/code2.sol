@@ -2,7 +2,7 @@
 pragma solidity >=0.5.0 <0.9.0;
 
 contract SolidityTest{
-    uint storedNumber;
+    uint storedNumber; 
 
     function set(uint newNumber) public {
         storedNumber = newNumber;
@@ -12,3 +12,4 @@ contract SolidityTest{
         return storedNumber;
     }
 }
+
