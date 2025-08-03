@@ -9,7 +9,7 @@ contract Marketplace {
         string description;
         uint256 price;
         bool forSale;
-    }
+    } 
 
     uint256 public itemCount = 0;
     mapping(uint256 => Item) public items;
