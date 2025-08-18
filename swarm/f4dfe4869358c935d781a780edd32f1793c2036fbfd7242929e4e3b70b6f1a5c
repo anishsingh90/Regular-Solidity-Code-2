@@ -1,0 +1,167 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.9;
+
+/**
+ * @title CrowdFunding
+ * @author Your Name
+ * @notice A decentra
+ lized crowdfunding platform contract.
+ */
+contract CrowdFunding {
+    /**
+     * @notice Represents a single fundraising campaign.
+     */
+    struct Campaign {
+        address owner; // The address of the campaign creator.
+        string title; // The title of the campaign.
+        string description; // A detailed description of the campaign.
+        uint256 target; // The funding goal in Wei.
+        uint256 deadline; // The deadline for the campaign, as a Unix timestamp.
+        uint256 amountCollected; // The total amount of Ether collected.
+        string image; // URL to an image for the campaign.
+        bool paid; // Flag to check if the funds have been paid out to the owner.
+    }
+
+    /**
+     * @notice Represents a donation made to a campaign.
+     */
+    struct Donation {
+        address donator; // The address of the donator.
+        uint256 amount;  // The amount donated in Wei.
+    }
+
+    // Array to store all campaigns.
+    Campaign[] public campaigns;
+
+    // Mapping from a campaign's ID to its list of donations.
+    mapping(uint256 => Donation[]) public campaignDonations;
+    
+    // Counter for the total number of campaigns created.
+    uint256 public numberOfCampaigns = 0;
+
+    /**
+     * @notice Creates a new fundraising campaign.
+     * @param _title The title of the campaign.
+     * @param _description The description of the campaign.
+     * @param _target The funding goal in Wei.
+     * @param _deadline The deadline for the campaign as a Unix timestamp.
+     * @param _image The URL of an image for the campaign.
+     * @return The ID of the newly created campaign.
+     */
+    function createCampaign(
+        string memory _title,
+        string memory _description,
+        uint256 _target,
+        uint256 _deadline,
+        string memory _image
+    ) public returns (uint256) {
+        require(_target > 0, "Target amount must be greater than 0");
+        require(_deadline > block.timestamp, "Deadline must be in the future");
+
+        Campaign storage newCampaign = campaigns.push();
+        newCampaign.owner = msg.sender;
+        newCampaign.title = _title;
+        newCampaign.description = _description;
+        newCampaign.target = _target;
+        newCampaign.deadline = _deadline;
+        newCampaign.image = _image;
+        newCampaign.paid = false;
+
+        uint256 campaignId = numberOfCampaigns;
+        numberOfCampaigns++;
+
+        return campaignId;
+    }
+
+    /**
+     * @notice Allows a user to donate to a specific campaign.
+     * @param _id The ID of the campaign to donate to.
+     */
+    function donateToCampaign(uint256 _id) public payable {
+        require(_id < numberOfCampaigns, "Campaign does not exist");
+        Campaign storage campaign = campaigns[_id];
+
+        require(block.timestamp < campaign.deadline, "Campaign has expired");
+        require(msg.sender != campaign.owner, "Campaign owner cannot donate to their own campaign");
+        require(msg.value > 0, "Donation amount must be greater than 0");
+
+        campaignDonations[_id].push(Donation({
+            donator: msg.sender,
+            amount: msg.value
+        }));
+
+        campaign.amountCollected += msg.value;
+    }
+
+    /**
+     * @notice Retrieves the donators and their donation amounts for a specific campaign.
+     * @param _id The ID of the campaign.
+     * @return A tuple containing an array of donator addresses and an array of donation amounts.
+     */
+    function getDonators(uint256 _id) public view returns (address[] memory, uint256[] memory) {
+        require(_id < numberOfCampaigns, "Campaign does not exist");
+        
+        Donation[] storage donations = campaignDonations[_id];
+        address[] memory donators = new address[](donations.length);
+        uint256[] memory amounts = new uint256[](donations.length);
+
+        for (uint256 i = 0; i < donations.length; i++) {
+            donators[i] = donations[i].donator;
+            amounts[i] = donations[i].amount;
+        }
+
+        return (donators, amounts);
+    }
+    
+    /**
+     * @notice Allows the campaign owner to withdraw the collected funds if the goal is met.
+     * @param _id The ID of the campaign.
+     */
+    function payoutCampaign(uint256 _id) public {
+        require(_id < numberOfCampaigns, "Campaign does not exist");
+        Campaign storage campaign = campaigns[_id];
+
+        require(msg.sender == campaign.owner, "Only the campaign owner can payout");
+        require(campaign.amountCollected >= campaign.target, "Campaign target not reached");
+        require(!campaign.paid, "Campaign has already been paid out");
+
+        campaign.paid = true;
+        (bool success, ) = payable(campaign.owner).call{value: campaign.amountCollected}("");
+        require(success, "Payout failed");
+    }
+
+    /**
+     * @notice Allows donators to claim a refund if the campaign fails to meet its goal by the deadline.
+     * @param _id The ID of the campaign.
+     */
+    function claimRefund(uint256 _id) public {
+        require(_id < numberOfCampaigns, "Campaign does not exist");
+        Campaign storage campaign = campaigns[_id];
+        
+        require(block.timestamp > campaign.deadline, "Campaign has not yet expired");
+        require(campaign.amountCollected < campaign.target, "Campaign was successful, no refund available");
+
+        uint256 refundAmount = 0;
+        Donation[] storage donations = campaignDonations[_id];
+
+        for (uint256 i = 0; i < donations.length; i++) {
+            if (donations[i].donator == msg.sender) {
+                refundAmount += donations[i].amount;
+                donations[i].amount = 0; // Prevent re-entrancy and double claims
+            }
+        }
+
+        require(refundAmount > 0, "You have no donation to refund");
+
+        (bool success, ) = payable(msg.sender).call{value: refundAmount}("");
+        require(success, "Refund failed");
+    }
+
+    /**
+     * @notice Retrieves all campaigns.
+     * @return An array of all Campaign structs.
+     */
+    function getCampaigns() public view returns (Campaign[] memory) {
+        return campaigns;
+    }
+}

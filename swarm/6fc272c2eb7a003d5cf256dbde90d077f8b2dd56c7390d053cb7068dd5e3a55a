@@ -1,0 +1,362 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "campaignDonations",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "donator",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "campaigns",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountCollected",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "image",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "paid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "claimRefund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_target",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_image",
+						"type": "string"
+					}
+				],
+				"name": "createCampaign",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "donateToCampaign",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCampaigns",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "target",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "deadline",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountCollected",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "image",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "paid",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CrowdFunding.Campaign[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getDonators",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numberOfCampaigns",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "payoutCampaign",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Your Name",
+			"kind": "dev",
+			"methods": {
+				"claimRefund(uint256)": {
+					"params": {
+						"_id": "The ID of the campaign."
+					}
+				},
+				"createCampaign(string,string,uint256,uint256,string)": {
+					"params": {
+						"_deadline": "The deadline for the campaign as a Unix timestamp.",
+						"_description": "The description of the campaign.",
+						"_image": "The URL of an image for the campaign.",
+						"_target": "The funding goal in Wei.",
+						"_title": "The title of the campaign."
+					},
+					"returns": {
+						"_0": "The ID of the newly created campaign."
+					}
+				},
+				"donateToCampaign(uint256)": {
+					"params": {
+						"_id": "The ID of the campaign to donate to."
+					}
+				},
+				"getCampaigns()": {
+					"returns": {
+						"_0": "An array of all Campaign structs."
+					}
+				},
+				"getDonators(uint256)": {
+					"params": {
+						"_id": "The ID of the campaign."
+					},
+					"returns": {
+						"_0": "A tuple containing an array of donator addresses and an array of donation amounts."
+					}
+				},
+				"payoutCampaign(uint256)": {
+					"params": {
+						"_id": "The ID of the campaign."
+					}
+				}
+			},
+			"title": "CrowdFunding",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"claimRefund(uint256)": {
+					"notice": "Allows donators to claim a refund if the campaign fails to meet its goal by the deadline."
+				},
+				"createCampaign(string,string,uint256,uint256,string)": {
+					"notice": "Creates a new fundraising campaign."
+				},
+				"donateToCampaign(uint256)": {
+					"notice": "Allows a user to donate to a specific campaign."
+				},
+				"getCampaigns()": {
+					"notice": "Retrieves all campaigns."
+				},
+				"getDonators(uint256)": {
+					"notice": "Retrieves the donators and their donation amounts for a specific campaign."
+				},
+				"payoutCampaign(uint256)": {
+					"notice": "Allows the campaign owner to withdraw the collected funds if the goal is met."
+				}
+			},
+			"notice": "A decentra lized crowdfunding platform contract.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Crowdfunding.sol": "CrowdFunding"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Crowdfunding.sol": {
+			"keccak256": "0xee26a1cdb4ef0c56030c916d89592419c84310e3ddbc157990ddd5f549e247e4",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://f4dfe4869358c935d781a780edd32f1793c2036fbfd7242929e4e3b70b6f1a5c",
+				"dweb:/ipfs/QmRKUzEhmVWffSHC2a2FTFgzzDVyB9pigaMmqmswknYePX"
+			]
+		}
+	},
+	"version": 1
+}

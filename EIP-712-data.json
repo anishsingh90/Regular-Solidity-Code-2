@@ -1,0 +1,43 @@
+{
+	"domain": {
+		"chainId": 1,
+		"name": "Example App",
+		"verifyingContract": "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
+		"version": "1"
+	},
+	"message": {
+		"prompt": "Welcome! In order to authenticate to this website, sign this request and your public address will be sent to the server in a verifiable way.",
+		"createdAt": 1718570375196
+	},
+	"primaryType": "AuthRequest",
+	"types": {
+		"EIP712Domain": [
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "version",
+				"type": "string"
+			},
+			{
+				"name": "chainId",
+				"type": "uint256"
+			},
+			{
+				"name": "verifyingContract",
+				"type": "address"
+			}
+		],
+		"AuthRequest": [
+			{
+				"name": "prompt",
+				"type": "string"
+			},
+			{
+				"name": "createdAt",
+				"type": "uint256"
+			}
+		]
+	}
+}
