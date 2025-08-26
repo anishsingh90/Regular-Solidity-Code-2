@@ -18,22 +18,12 @@
 						"type": "uint256"
 					}
 				],
-				"name": "blockData",
+				"name": "blockReasons",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "reason",
 						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "latency",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "generated",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -60,7 +50,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -77,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Latency2.sol": "BlockLatencyReason"
+			"latency.sol": "BlockLatencyReason"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -91,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Latency2.sol": {
-			"keccak256": "0xc15502865f47637a0abfe4e24b9851fd0b6c174c8f8e0fd258cf182151211739",
+		"latency.sol": {
+			"keccak256": "0xf40c8746037495fa702f5dab5c15398a949721cb85e6363b79caf88aa44905e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f4b1fcdab493554ec5102633ff3a8958a84c1a93e0ce228cccbad1308332d4d2",
-				"dweb:/ipfs/Qma6DxRKgCHusDcYhED9oL51u4zv2wmNdaQ5R6CNKw3iC7"
+				"bzz-raw://ae3d372d81e9aefd2a2d8f3997aabdc147e87c8cb6c59d4e0aa23660f2f21bcd",
+				"dweb:/ipfs/QmXtPin4xLs8xPZbodiDkBnbjFDjpTRPt6GRu33xuFuyzW"
 			]
 		}
 	},
