@@ -32,7 +32,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "AuctionEnded",
+				"name": "AcutionEnded",
 				"type": "event"
 			},
 			{
@@ -56,19 +56,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "auctionEndTime",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "bid",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -79,6 +66,19 @@
 				"name": "endAuction",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "endTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -121,19 +121,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -154,6 +141,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "seller",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "withdraw",
 				"outputs": [
 					{
@@ -167,41 +167,19 @@
 			}
 		],
 		"devdoc": {
-			"author": "Copilot",
 			"kind": "dev",
-			"methods": {
-				"constructor": {
-					"params": {
-						"_biddingTime": "Duration of the auction in seconds"
-					}
-				}
-			},
-			"title": "Simple Auction Contract",
+			"methods": {},
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"bid()": {
-					"notice": "Place a bid on the auction"
-				},
-				"constructor": {
-					"notice": "Initialize the auction with a bidding duration in seconds"
-				},
-				"endAuction()": {
-					"notice": "End the auction and send funds to the owner"
-				},
-				"withdraw()": {
-					"notice": "Withdraw your pending returns if you were outbid"
-				}
-			},
-			"notice": "This contract implements a simple auction where bidders can place bids and the highest bidder wins.",
+			"methods": {},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day-29/code1.sol": "Auction"
+			"Day-30/code1.sol": "Auction"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -215,12 +193,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day-29/code1.sol": {
-			"keccak256": "0xdf025403b7d642c15e3c2cc972054e235749e50f5292bd233c88c7cc3aa87c84",
+		"Day-30/code1.sol": {
+			"keccak256": "0x689b2621b71a191189fb2cd860b3a8ded072884f719113cd17b5ce72a785dc18",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8720737abbfb862b654feea3047d56a8dba23578307ae6389747a2c25684031b",
-				"dweb:/ipfs/QmVBrd5c7KJL4edrZbFp9eRp2GTmDpwdeReK1bQNticWpM"
+				"bzz-raw://eefd9fb9010d4f2444fcca7809ece433f3d0e5cbe7b3a773946b32d4eebdb46c",
+				"dweb:/ipfs/QmPh1Jsjk8X9ybhbCYBvWGuy4FNuomYPzczKoPk5s3kZoe"
 			]
 		}
 	},
