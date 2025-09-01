@@ -152,7 +152,7 @@ contract Subscriptn {
      */
     function getUserSubscriptions(address user) external view returns (uint256[] memory) {
         return userSubscriptions[user];
-    }
+    } 
 
     /**
      * @dev Check if payment is due for a subscription
