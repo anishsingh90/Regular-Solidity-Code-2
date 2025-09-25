@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract MonthlySubscription {
+contract MonthlySubscription { 
     address public owner;
     uint256 public subscriptionFee; // in wei (e.g. 0.01 ETH = 10**16 wei)
     uint256 public period = 30 days;
@@ -60,4 +60,5 @@ contract MonthlySubscription {
     function isActive(address user) external view returns (bool) {
         return subscribers[user].active && block.timestamp < subscribers[user].nextPaymentTime;
     }
+
 }
