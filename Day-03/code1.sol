@@ -29,4 +29,5 @@ contract Type{
     function getdefaultvalue() public pure returns(week_days){
         return default_value;
     }
+
 }
