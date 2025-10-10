@@ -3,7 +3,7 @@ pragma solidity >=0.5.0 <0.9.0;
 
 contract SimpleCounter{
     uint counter;
-
+ 
     function increamentCounter() public {
         counter = counter + 1;
     }
@@ -11,4 +11,5 @@ contract SimpleCounter{
     function getCounter() public view returns(uint){
         return counter;
     }
+
 }
