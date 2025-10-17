@@ -16,3 +16,4 @@ contract SolidityTest{
         return sum;
     }
 }
+
